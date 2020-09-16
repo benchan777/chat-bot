@@ -26,6 +26,10 @@ def get_bot_response_meal(response):
     response_boba_tea = ["brown sugar milk tea", "oolong milk tea", "matcha milk tea"]
     response_smoothie = ["banana strawberry smoothie", "watermelon smoothie", "mango smoothie"]
 
+    response_ice_cream = ["coffee ice cream", "cookies and cream", "strawberry ice cream"]
+    response_cake = ["carrot cake", "red velvet cake", "pound cake"]
+    response_cookie = ["chocolate chip", "snickerdoodle", "sugar cookie"]
+
     if response == "Chinese food":
         return choice(response_chinese_food)
     elif response == "Mexican food":
@@ -40,6 +44,12 @@ def get_bot_response_meal(response):
         return choice(response_boba_tea)
     elif response == "smoothie":
         return choice(response_smoothie)
+    elif response == "ice cream":
+        return choice(response_ice_cream)
+    elif response == "cake":
+        return choice(response_cake)
+    elif response == "cookie":
+        return choice(response_cookie)
     else:
         return
 
