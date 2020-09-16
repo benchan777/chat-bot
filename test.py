@@ -95,5 +95,5 @@ while True:
 
     more_suggestions_2 = input(f"Would you like another {bot_response} suggestion? ")
 
-    if more_suggestions_2 == "no" or more_suggestions_2 == "done":
+    if more_suggestions_2 == "no":
         break
