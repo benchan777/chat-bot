@@ -13,7 +13,7 @@ def get_bot_response(user_response):
     elif user_response == "dessert":
         return choice(response_dessert)
     else:
-        return "I don't know what to do with that information."
+        return "Please only enter food, meal, drink, or dessert."
 
 def get_bot_response_meal(bot_response):
 
@@ -71,6 +71,9 @@ while True:
     bot_response = get_bot_response(user_response)
     print(bot_response)
 
+    #if user_response != "meal" or user_response != "drink" or user_response != "dessert" or user_response != "food":
+    #   continue
+
     print("If you would like to exit now, please enter done. If you would like another type of meal selection, please enter no.")
     more_suggestions = input(f"Would you like a suggestion on what kind of {bot_response} you would like? ")
 
@@ -86,11 +89,11 @@ while True:
         response = get_bot_response_meal(bot_response)
         print(response)
     
-    if user_response == "drink":
+    elif user_response == "drink":
         response = get_bot_response_drink(bot_response)
         print(response)
 
-    if user_response == "dessert":
+    else: #user_response == "dessert":
         response = get_bot_response_dessert(bot_response)
         print(response)
 
