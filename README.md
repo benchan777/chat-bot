@@ -14,3 +14,6 @@ This bot will randomly decide types of food for you, such as food, drink, or des
     * Enter no if you want another food, drink, or dessert suggestion.
     * Enter done if you want to exit the bot.
     * Enter yes if you'd like a random suggestion of a specific food, drink, or dessert.
+* After entering yes and receiving a specific food, drink, or dessert selection:
+    * Enter no or done to exit the bot.
+    * Enter yes to get another random food, drink, or desert selection.
