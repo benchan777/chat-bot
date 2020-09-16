@@ -71,7 +71,8 @@ while True:
     bot_response = get_bot_response(user_response)
     print(bot_response)
 
-    more_suggestions = input(f"Would you like a suggestion on what kind of {bot_response} you would like? If you would like to exit now, please enter done. If you would like another type of meal selection, please enter no. ")
+    print("If you would like to exit now, please enter done. If you would like another type of meal selection, please enter no.")
+    more_suggestions = input(f"Would you like a suggestion on what kind of {bot_response} you would like? ")
 
     if more_suggestions == "done":
         exit()
@@ -93,6 +94,7 @@ while True:
         response = get_bot_response_dessert(bot_response)
         print(response)
 
+    print("Enter no if you don't want any more suggestions.")
     more_suggestions_2 = input(f"Would you like another {bot_response} suggestion? ")
 
     if more_suggestions_2 == "no" or more_suggestions_2 == "done":
