@@ -71,8 +71,8 @@ while True:
     bot_response = get_bot_response(user_response)
     print(bot_response)
 
-    #if user_response != "meal" or user_response != "drink" or user_response != "dessert" or user_response != "food":
-    #   continue
+    if user_response != "meal" and user_response != "drink" and user_response != "dessert" and user_response != "food":
+       continue
 
     print("If you would like to exit now, please enter done. If you would like another type of meal selection, please enter no.")
     more_suggestions = input(f"Would you like a suggestion on what kind of {bot_response} you would like? ")
