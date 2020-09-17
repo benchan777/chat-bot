@@ -1,5 +1,6 @@
 from random import choice
 
+# This function will randomly choose an option inside the meal, drink, or dessert list depending on which option the user inputs.
 def get_bot_response(user_response):
 
     response_meal = ["Chinese food", "Mexican food", "Italian food"]
@@ -15,6 +16,7 @@ def get_bot_response(user_response):
     else:
         return "Please only enter food, meal, drink, or dessert."
 
+# This function will randomly choose different types of Chinese, Mexican, or Italian food if the user says they want food.
 def get_bot_response_meal(bot_response):
 
     response_chinese_food = ["orange chicken", "fried rice", "szechuan noodles"]
@@ -30,6 +32,7 @@ def get_bot_response_meal(bot_response):
     else:
         return
 
+# This function will randomly choose different types of coffee, soda, boba tea, or smoothies if the user says they want a drink. 
 def get_bot_response_drink(bot_response):
 
     response_coffee = ["cappuccino", "latte", "flat white", "espresso"]
@@ -48,6 +51,7 @@ def get_bot_response_drink(bot_response):
     else:
         return
 
+# This function will randomly choose different types of ice crea, cake, or cookies if the user says they want a dessert.
 def get_bot_response_dessert(bot_response):
 
     response_ice_cream = ["coffee ice cream", "cookies and cream", "strawberry ice cream"]
@@ -66,6 +70,8 @@ def get_bot_response_dessert(bot_response):
 print("Welcome to the meal helper bot! I'll help suggest some food, drinks, or desserts for you.")
 
 while True:
+
+    # Asks the user to input if they want a meal, drink, or dessert.
     user_response = input("Do you feel like getting a meal, drink, or dessert? ")
 
     bot_response = get_bot_response(user_response)
