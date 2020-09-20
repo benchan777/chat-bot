@@ -74,37 +74,47 @@ while True:
     # Asks the user to input if they want a meal, drink, or dessert.
     user_response = input("Do you feel like getting a meal, drink, or dessert? ")
 
+    # Calls the get_bot_response function and then prints the result.
     bot_response = get_bot_response(user_response)
     print(bot_response)
 
+    # Checks if the user entered one of the specified responses. If they did not, this if statement will loop back to the beginning of the while loop and prompt for another input.
     if user_response != "meal" and user_response != "drink" and user_response != "dessert" and user_response != "food":
        continue
 
+    # Asks the user what they would like to do next. If the user enters no, it will go back to the beginning of the while loop and suggest another meal.
     print("If you would like to exit now, please enter done. If you would like another type of meal selection, please enter no.")
     more_suggestions = input(f"Would you like a suggestion on what kind of {bot_response} you would like? ")
 
+    # If the user enters done, the program will terminate.
     if more_suggestions == "done":
         exit()
 
+    # If the user enters yes, the current loop will be exited and the program will continue onto the next loop.
     if more_suggestions == "yes":
         break
 
 while True:
     
+    # Calls the function to suggest a random meal if the user inputs meal.
     if user_response == "meal":
         response = get_bot_response_meal(bot_response)
         print(response)
     
+    # Calls the function to suggest a random drink if the user inputs drink.
     elif user_response == "drink":
         response = get_bot_response_drink(bot_response)
         print(response)
 
-    else: #user_response == "dessert":
+    # Calls the function to suggest a random dessert if the user inputs dessert.
+    else:
         response = get_bot_response_dessert(bot_response)
         print(response)
 
+    # Asks the user if they would like another suggestion. If yes is entered, the while statement will loop again.
     print("Enter no if you don't want any more suggestions.")
     more_suggestions_2 = input(f"Would you like another {bot_response} suggestion? ")
 
+    # If the user enters no or done, the program will exit this while loop and the entire program will be finished running.
     if more_suggestions_2 == "no" or more_suggestions_2 == "done":
         break
