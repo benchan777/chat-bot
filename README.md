@@ -6,7 +6,7 @@ A chat bot that randomly suggests different types of food, drinks, or desserts f
     - [Usage](#usage)
 
 ## Explanation
-This bot will randomly decide types of food for you, such as food, drink, or desserts. After choosing, you can ask it to randomly pick another type of food for you, or you can ask it to give you a random suggestion in each subcategory. It will then ask if you'd like another suggestion within the subcategory or exit.
+This bot will randomly decide types of food for you, such as food, drink, or desserts. After choosing, you can ask it to randomly pick another type of food for you, or you can ask it to give you a random suggestion in each subcategory. It will then ask if you'd like another suggestion within the subcategory or it you want to exit.
 
 ## Usage
 * Input whether you'd like food, drinks, or a dessert.
